@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GLB Viewer</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- UI Menu -->
+    <div id="ui-menu">
+        <button id="btn-enter">Enter Locker</button>
+        <button id="btn-register">Register Locker</button>
+        <button id="btn-exit">Exit Locker</button>
+    </div>
+    
+    <!-- Import Map: Must stay in the HTML file before main.js loads -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- Point to your new isolated JavaScript file -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
